@@ -1,0 +1,14 @@
+import secrets
+
+print("Welcome to the champion league final")
+
+select = input("Please select your direction to score - (left, right, middle.) - ")
+select = select.lower()
+new = ["left", "middle", "right"]
+rannew = secrets.choice(new)
+
+
+if select != rannew :
+  print("goooooal! you have successfully placed your shot in the correct direction.\n Congratulation you have won the game")
+else :
+  print("oooh noo! you have missed your penalty! with this unfortunately you have lost your game.")
